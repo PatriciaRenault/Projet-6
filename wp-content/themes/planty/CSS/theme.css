@@ -1,0 +1,299 @@
+/*importation de la police Syne*/
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+    body * {
+        font-family: 'Syne', sans-serif;
+    }
+
+
+/*************************header***********************/
+
+/* menu de navigation */
+
+/* Bouton commander*/
+
+    #menu-item-20 .text-wrap{
+        color: white;
+    }
+
+    #site-navigation #menu-item-20 a {
+        background-color : #DC9F96;
+    }
+        
+    #site-navigation #menu-item-20 a:hover {
+        background-color : #c02e44;
+    }
+    
+    /*bouton nous rencontrer*/
+    
+    #site-navigation #menu-item-21 a:hover {
+        font-size: 13px;
+    }
+    
+    #menu-item-21 .text-wrap{
+        color:black;
+    }
+
+/************footer***********/
+
+    #site-footer {
+        padding-bottom: 30px;
+        margin-top: 30px;
+        text-align: center;
+        color: #000000;
+        background-color: #ffffff;
+        text-decoration: none;
+    }
+
+    .footer-groupboisson {
+        position: relative;
+    }
+  
+  .footer-groupboisson img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+/*********Page accueil *********/
+
+/*ombre sur conteneur*/
+    #boite_boisson{
+        border-bottom: 15px solid #E3D9D0;
+        border-radius: 0% 0% 50% 50% / 10% 10% 10% 10%;
+        overflow: hidden;
+    }
+
+/*format du bouton commander*/
+    #bouton_commander {
+        width: 198px;
+        height: 55px;
+        border-style: none;
+        background-color: #E0B9B4;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 37px;
+        font-family: 'Syne', sans-serif;
+        color: white;
+        padding: 9px 57px;
+    }
+    #bouton_commander:hover {
+        background-color: #c02e44;
+    }  
+
+/********* page Nous rencontrer ************/
+
+
+    #frmcontact label {
+        color: black;
+	    font-family: Syne;
+	    font-size: 20px;
+	    font-weight:400;
+        line-height: 24px;
+        margin-bottom: 20px;  
+    }
+
+    #frmcontact input[type=email], 
+    #frmcontact input[type="text"], 
+    #frmcontact textarea{
+        background-color: #fff;
+        border-radius: 7px;
+        border: unset;
+    }
+
+    #frmcontact input[type=email], 
+    #frmcontact input[type="text"]{
+        height : 71px;
+    }
+
+    #frmcontact textarea{
+        height : 237px;
+    }   
+    #frmcontact input[type=submit]{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        width: 198px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border-radius: 7px;
+        background-color:#E0B9B4;
+    }
+    #frmcontact input[type=submit]:hover{
+        background-color:#C02E44;
+    }
+
+
+/*********Page commande**********/
+  
+    .quantite {
+        width: 70px;
+        height: 56px;
+        text-align: center;
+        border-style: none;
+        font-size: 16px;
+        line-height: 19.36px;
+        font-weight: 400;
+    }
+
+/*enlever les fleches des inputs*/
+    /* Firefox */
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    /* Chrome */
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button { 
+        -webkit-appearance: none;
+        margin:0;
+    }
+/*Formulaire de commande*/
+
+    #frmcommande{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin: 25px 0px 45px 0px;
+        width: 100%;
+    }
+
+    #frminfos, 
+    #frmlivr{
+        display: inline !important;
+        padding-left: 35px;
+        padding-right: 35px;
+    } 
+
+    #frminfos {
+        border-right: solid 2px #fff;
+    }
+ 
+    #frmcommande h3{
+        color: #fff;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+
+    #frmcommande label{
+        font-size: 20px;
+        font-weight: 400;
+        color:white;
+    }
+
+    #frmcommande input {
+        width: 383px !important; 
+        height: 71px;
+        background-color: #ffffff;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+
+
+   /*bouton commander*/
+ 
+    .boutoncommande{
+        display: flex;
+        justify-content: center;
+    }
+
+    #btncommand{
+        width: 198px; 
+        height: 55px;
+        background-color: #E0B9B4;
+        font-size: 15px;
+        margin-left: 60px;
+    }
+
+    #btncommand:hover {
+        background-color: #C02E44;
+    }
+
+/*gestion des erreurs*/
+
+    .wpcf7-response-output{
+        background-color: #ffffff;
+        color: red;
+    }
+
+    .wpcf7-not-valid-tip{
+        margin-top: 5px;
+        background-color:#ffffff;
+        color:red;
+        border-color: red;
+        border: 2px solid;
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+/******************responsibe tablette*****************/
+@media screen and (min-width: 634px) and (max-width: 900px){
+
+    /*formulaire de commande*/
+    #frminfos, 
+    #frmlivr{
+        display: inline !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #frmcommand input {
+        width: 350px !important; 
+        height: 71px;
+        background-color: #ffffff;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+
+}
+
+/**************responsive telephone portable *****************/
+
+@media screen and (min-width: 350px) and (max-width: 633px){
+
+    /*ombre sur page d'acceuil*/
+    #boite_boisson{
+        border-bottom: 15px solid #E3D9D0;
+        border-radius: 0% 0% 50% 50% / 20% 20% 20% 20%;
+        overflow: hidden;
+    }
+    /*formulaire de commande*/
+    #frmcommande{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -10px;
+    }
+    #frminfos, 
+    #frmlivr{
+        display: inline !important;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 10px 0px 10px 0px;
+    }
+    #frminfos {
+        border-bottom: solid 2px #fff;
+        border-right: none;
+    }
+
+    #frmcommande h3{
+        font-size: 26px;
+    }
+    #frmcommande input{
+        width: 300px !important; 
+        height: 71px;
+        background-color: #ffffff;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+
+    #btncommand{
+        width: 198px; 
+        height: 55px;
+        background-color: #E0B9B4;
+        font-size: 15px;
+    } 
+
+}
+
+
